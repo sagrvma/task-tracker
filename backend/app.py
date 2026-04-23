@@ -5,13 +5,13 @@ app = Flask(__name__)
 CORS(app)
 
 tasks = [
-    {"id": 1, "title": "Basic initial setup", "done": False},
+    {"id": 1, "title": "Basic initial setup", "done": True},
     {"id": 2, "title": "Build Task Tracker", "done": False},
     {"id": 3, "title": "Connect with React", "done": False}
 ]
 
-@app.route("/api/health")
-def health():
+@app.route("/api/tasks")
+def get_tasks():
     return jsonify(tasks)
 
 @app.route("/api/tasks", methods=["POST"])
