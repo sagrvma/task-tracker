@@ -8,6 +8,7 @@ tasks = [
     {"id": 1, "title": "Basic initial setup", "done": True},
     {"id": 2, "title": "Build Task Tracker", "done": False},
     {"id": 3, "title": "Connect with React", "done": False}
+    {"id": 4, "title": "Connect with Flask", "done": False}
 ]
 
 @app.route("/api/tasks")
